@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  background-color: #0c0910;
+  width: 80px;
+  height: 80px;
+  margin-top: -8px;
+  margin-left: -16px;
+  display: flex;
+}
+.navbar-brand #logo {
+  color: #FFF;
+  text-align: center;
+  padding: 16px;
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav-link {
+  color: #0C0910 !important;
+  margin-right: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  height: 650px;
+}
+.header .section_image {
+  width: 60vw;
+  height: 100%;
+  background-image: url(../img/imagen1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section_container {
+  width: 40vw;
+}
+.section_container .section__title {
+  padding: 30px 60px;
+  height: 70%;
+  justify-content: center;
+}
+.section_container .section__title h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+.section_container .section__text_large {
+  color: #A6A5A8;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  width: 60%;
+}
+.section_container .section__text_small {
+  color: #A6A5A8;
+  display: none;
+  color: #A6A5A8;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+    height: 850px;
+  }
+  .header .section_image {
+    margin-top: -9px;
+    width: 100%;
+    height: 60%;
+    background-position: inherit;
+  }
+
+  .section_container {
+    order: 2;
+    width: 100vw;
+  }
+  .section_container h1 {
+    width: 461px;
+    text-align: inherit;
+    padding-bottom: 0px;
+  }
+  .section_container .section__text_large {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    height: 100%;
+  }
+  .header .section_image {
+    height: 350px;
+    width: 111vw;
+  }
+
+  .section_container {
+    order: 2;
+    width: 100vw;
+  }
+  .section_container .section__title {
+    width: 100vw;
+    padding: 10px 20px;
+  }
+  .section_container .section__title h1 {
+    width: 351px;
+    text-align: inherit;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .section_container .section__text_large {
+    display: none;
+  }
+  .section_container .section__text_small {
+    display: block;
+    width: 89%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section__text_small {
+    display: block;
+    width: 92% !important;
+  }
+}
+.article {
+  display: flex;
+  height: 30%;
+}
+
+.news {
+  padding: 30px 60px;
+  background-color: #0c0910;
+  color: #FFF;
+  width: 90vw;
+}
+.news h3 {
+  margin-bottom: 13px;
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.vertical-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  width: 10%;
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.vertical-text #suscribir {
+  color: #0C0910;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    width: 100vw;
+    height: auto;
+  }
+
+  .news {
+    width: 90wv;
+    padding-bottom: 66px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .news {
+    padding: 10px 20px;
+  }
+}
+.btn {
+  border-radius: 0px !important;
+  border: 1px solid black !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  padding-inline-start: 30px !important;
+  padding-inline-end: 30px !important;
+  padding-top: 10px !important;
+}
+
+.btn {
+  margin-bottom: -21px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    margin-bottom: 22px !important;
+  }
+}
+.form-group #text-selector {
+  font-family: "Old Standard TT", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#formGroupExampleInput {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-control {
+  border-radius: 0px !important;
+  border: 0px solid !important;
+}
+
+@media screen and (max-width: 768px) {
+  .form-control {
+    width: 87% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form-control {
+    width: 95% !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

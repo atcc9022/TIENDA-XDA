@@ -1,0 +1,140 @@
+.header {
+    display:flex;
+    height:650px;
+
+    .section_image {
+        width:60vw;
+        height:100%;
+        background-image:url(../img/imagen1.png);
+        background-size:cover;
+        background-position:center;
+    }
+}
+
+
+.section_container{
+        width:40vw;   
+    
+    .section__title{
+        padding:30px 60px;
+        height:70%;
+        justify-content:center;
+        
+        h1 {
+        font-family:$standart;
+        font-size:$xxx__large;
+        font-weight:700;
+        }
+
+        
+    }
+
+    .section__text_large {
+        color:$quick-silver;
+        text-align:left;
+        font-family:$raleway;
+        font-size:$small;
+        font-weight:700;
+        width:60%;    
+    }
+
+    .section__text_small {
+        color:$quick-silver;
+        display:none;
+        color:$quick-silver;
+        text-align:left;
+        font-family:$raleway;
+        font-size:$small;
+        font-weight:700;
+    }
+
+}
+
+// ___________________________MEDIA QUERY TABLET__________________________________
+
+
+@media screen and (max-width:768px){
+
+    .header {
+        width:100%;
+        flex-direction: column;
+        height: 850px;
+
+        .section_image{
+            margin-top:-9px;
+            width:100%;
+            height:60%;
+            background-position: inherit;
+        }
+
+        
+    }    
+    
+
+    .section_container{
+        order:2;
+        width:100vw;
+
+        h1 { 
+            width: 461px;
+            text-align:inherit;
+            padding-bottom:0px;
+        }
+
+        .section__text_large {
+            width: 67%;
+        }
+    }
+}
+
+// ___________________________MEDIA QUERY MOVIL__________________________________
+
+@media screen and (max-width: 576px){
+
+    .header {
+        height: 100%;
+
+        .section_image{
+            height: 350px;
+            width:111vw;
+        }
+    }
+
+    .section_container{
+        order:2;
+        width:100vw;
+
+        
+
+        .section__title{
+            width: 100vw;
+            padding:10px 20px;
+
+            h1 {
+                width: 351px;
+                text-align: inherit;
+                font-size: 30px;
+                margin-top: 20px;
+
+            }
+        }
+    
+        .section__text_large {
+            display:none;
+        }
+    
+        .section__text_small {
+            display: block;
+            width: 89%      
+        }  
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .section__text_small {
+        display: block;
+        width: 92% !important;     
+    }  
+    
+}

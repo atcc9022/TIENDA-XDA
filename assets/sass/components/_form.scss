@@ -1,0 +1,38 @@
+.form-group {
+    #text-selector {
+        font-family: $standart;
+        font-size: $medium;
+        font-weight: 400;
+    }
+}
+
+#formGroupExampleInput {
+    font-family: $raleway;
+    font-size: $small;
+    font-weight: 700;
+}
+
+.form-control {
+    border-radius: 0px !important;
+    border: 0px solid !important;
+}
+
+// ___________________________MEDIA QUERY TABLET__________________________________
+
+@media screen and (max-width:768px) {
+
+    .form-control {
+        width: 87% !important;
+    }
+    
+}
+
+// ___________________________MEDIA QUERY MOVIL__________________________________
+
+@media screen and (max-width: 576px){
+    .form-control {
+        width: 95% !important;
+    
+    }
+}
+

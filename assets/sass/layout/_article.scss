@@ -1,0 +1,63 @@
+.article {
+    display:flex;
+    height:30%;
+}
+
+.news {
+    padding: 30px 60px;
+    background-color: #0c0910;
+    color: $white;
+    width: 90vw;
+
+    h3 {
+    margin-bottom: 13px;
+    font-family: $standart;
+    font-size: $xx__large;
+    font-weight: 400;
+    }    
+}
+
+.vertical-text {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    writing-mode: vertical-lr;
+    // background-color: $;
+    width:10%;    
+    font-family: $standart;
+    font-size: $x__large;
+    font-weight: 700;
+
+    #suscribir {
+    color: $smoky-black;
+    padding: 0;
+    margin: 0;
+    }
+}
+
+
+// ___________________________MEDIA QUERY TABLET__________________________________
+
+@media screen and (max-width:768px) {
+
+    .article {
+        width: 100vw;
+        height:auto;
+    }
+
+    .news {
+        width: 90wv;
+        padding-bottom: 66px;
+    }
+}
+
+// ___________________________MEDIA QUERY MOVIL__________________________________
+
+@media screen and (max-width: 576px){
+
+    .news {
+        padding: 10px 20px;
+    }
+  
+
+}

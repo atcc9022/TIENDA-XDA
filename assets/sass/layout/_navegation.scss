@@ -1,0 +1,25 @@
+.navbar-brand {
+    background-color: #0c0910;
+    width: 80px;
+    height: 80px;
+    margin-top: -8px;
+    margin-left: -16px;
+    display:flex;
+
+    #logo {
+        color: $white;
+        text-align: center; 
+        padding: 16px;
+        font-family: $standart;
+        font-size: $x__large;
+        font-weight: 400;
+    }
+}
+
+.nav-link {
+    color: $smoky-black !important;
+    margin-right: 20px;
+    font-family: $raleway;
+    font-weight: 700;
+
+}

@@ -1,0 +1,29 @@
+.btn {
+    border-radius: 0px !important;
+    border: 1px solid black !important;
+    font-family: $raleway;
+    font-size: $x__small !important;
+    font-weight: 700 !important;
+    padding-inline-start: 30px !important;
+    padding-inline-end: 30px !important;
+    padding-top: 10px !important;
+
+}
+
+
+
+// ___________________________MEDIA QUERY TABLET__________________________________
+
+.btn {
+    margin-bottom: -21px !important;
+}
+
+
+
+// ___________________________MEDIA QUERY MOVIL__________________________________
+
+@media screen and (max-width: 576px) {
+    .btn {
+        margin-bottom: 22px !important;
+    }
+}
